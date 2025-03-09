@@ -47,6 +47,7 @@
                 float:left;
             }
             section::after{
+                position:relative;
                 display:table;
                 clear:both;
             }
@@ -91,16 +92,16 @@
             </a></li>
         </ul>
 
-        <section>
-            <div style="background-color:#d6e2d7;  
-                        width: 20vw; 
-                        min-height: 100vh;
+        <section style="position: -webkit-sticky;">
+            <div style="background-color:#d6e2d7;
+                        float:none;  
+                        width: 20vw;
                         white-space: normal;
                         text-align: center;
-                        position: fixed;
-                        overflow: hidden;
+                        position: -webkit-sticky;
+                        min-height:100vh;
                         top:0px;
-                        z-index: 1;
+                        z-index: 1000;
                         padding-top: 43px;">
                 <img src="profilepic.jpg" style="border-radius: 50%; margin-top: 2vw; height: auto;" width="50%">
                 <h2 style="font-size:x-large; text-align:center;">About Me</h2>
