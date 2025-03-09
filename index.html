@@ -47,7 +47,6 @@
                 float:left;
             }
             section::after{
-                position:relative;
                 display:table;
                 clear:both;
             }
@@ -68,7 +67,7 @@
     </head>
     <body>
         <!--This is the Navigation Menu-->
-        <ul style="z-index: 3; position:relative;">
+        <ul style="z-index: 3; position:relative; margin:0;">
             <li><a href="index.html">Home</a></li>
             <li><a href="dm.html">Digital Marketing</a></li>
             <li><a href="programming.html">Programming</a></li>
@@ -92,18 +91,18 @@
             </a></li>
         </ul>
 
-        <section style="position: -webkit-sticky;">
-            <div style="background-color:#d6e2d7;
-                        float:none;  
+        <section style="height:2000px; margin:0;">
+            <div style="background-color:#d6e2d7;  
                         width: 20vw;
+                        min-height: 100vh;
                         white-space: normal;
                         text-align: center;
-                        position: -webkit-sticky;
-                        min-height:100vh;
+                        overflow:hidden;
                         top:0px;
-                        z-index: 1000;
-                        padding-top: 43px;">
-                <img src="profilepic.jpg" style="border-radius: 50%; margin-top: 2vw; height: auto;" width="50%">
+                        position: sticky;
+                        z-index: 1;
+                        margin:0;">
+                <img src="profilepic.jpg" style="border-radius: 50%; height: auto; margin-top: 4vw;" width="50%">
                 <h2 style="font-size:x-large; text-align:center;">About Me</h2>
                 <p style="text-align:left; font-size: small; padding-left: 13px; padding-right:13px;">
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent in tristique conubia, eleifend cras cras placerat. 
@@ -114,8 +113,8 @@
                     Maximus per ac metus non fermentum vel tempor viverra. Ante fames vivamus tempor nibh ad volutpat finibus.
                 </p>
             </div>
-            <div style="padding-left:25vw; padding-bottom: 40px;">
-                <h1 style="font-size:x-large;">This is my Portfolio</h1>
+            <div style="padding-left:25vw; float:none; margin:0;">
+                <h1 style="font-size:x-large; margin:0; padding-top:20px;">This is my Portfolio</h1>
                 <p>
 <pre>
 Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent in tristique conubia, eleifend cras cras placerat. 
